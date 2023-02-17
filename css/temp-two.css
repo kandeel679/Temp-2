@@ -885,7 +885,7 @@ header .container .links ul a{
   text-align: center;
   display: flex;  
   flex-direction: column;
-  padding: 0 200px;
+  padding: 0 auto;
   align-items: center;
   gap: 20px;
   justify-content: center;
@@ -894,6 +894,51 @@ header .container .links ul a{
 .hoksh .text h3{
  font-weight: 400; 
  font-size: 50px;
+}
+/* @media (max-width: 1005px) {
+  .hoksh .text h3{
+    
+    font-size: 40px;
+   }
+   .hoksh .text p{
+    font-size: 12px;
+   }
+}
+@media (max-width: 888px) {
+  .hoksh .text h3{
+    
+    font-size: 30px;
+   }
+   .hoksh .text p{
+    font-size: 12px;
+   }
+}
+@media (max-width: 769px) {
+  .hoksh .text h3{
+    
+    font-size: 25px;
+   }
+   .hoksh .text p{
+    font-size: 12px;
+   }
+} */
+@media (max-width: 606px) {
+  .hoksh .text h3{
+    
+    font-size: 40px;
+   }
+   .hoksh .text p{
+    font-size: 12px;
+   }
+}
+@media (max-width: 450px) {
+  .hoksh .text h3{
+    
+    font-size: 30px;
+   }
+   .hoksh .text p{
+    font-size: 12px;
+   }
 }
 
 /* .hoksh .text p{
@@ -928,15 +973,64 @@ header .container .links ul a{
   justify-content: center;
   align-items: center;
   /* text-align: center; */
+  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+  padding: 20px 0;
+  width: 197px;
 }
 .pricing .container .row .act-price{
   display: flex;
   gap: 10px;
+  font-size: 37px
+}
+.pricing .container .row .act-price p{
+  font-size: 20px;
 }
 .pricing .container .row .act-price span{
   font-size: 10px;
   text-transform:uppercase ;
 }
+.pricing .container .row .feat{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  text-align: center;
+  
+  
+}
+.pricing .container .row .feat p{
+  padding:14px 0 ;
+}
 
+.pricing .container .row .feat p:not(:nth-of-type(1)){
+  border-top: 1px solid var(--main-color);
+  
 
+}
+.pricing .container .row .button{
+  width: 197px;
+  border-top: var(--main-color) 1px solid;
+  position: relative;
+  height: 108px;
+}
+.pricing .container .row .button button{
+  position: absolute;
+  left:50% ;
+  top: 50%;
+  transform:  translate(-50% , -50%);
+  width: 120px;
+  height: 33px;
+  background-color: white;
+  border: 2px var(--main-color ) solid;
+  cursor: pointer;
+  transition: 300ms;
+
+}
+.pricing .container .row .button button:hover{
+  color: white;
+  background-color: var(--main-color);
+  /* font-weight: 700; */
+
+}
 /* end of pricing */
