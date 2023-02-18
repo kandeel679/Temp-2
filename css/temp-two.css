@@ -448,6 +448,10 @@ header .container .links ul a{
 }
 .portfolio .img-container img{
   max-width: 100%;
+  transition: 500ms;
+}
+.portfolio .img-container img:hover{
+  transform: rotate(4deg);
 }
 .portfolio .img-container .box .cap{
 
@@ -977,6 +981,11 @@ header .container .links ul a{
   border-top: 1px solid var(--main-color);
   padding: 20px 0;
   width: 197px;
+}
+.pricing .container .row .price p{
+  text-transform: uppercase;
+
+
 }
 .pricing .container .row .act-price{
   display: flex;
