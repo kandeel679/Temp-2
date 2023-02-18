@@ -1046,9 +1046,61 @@ header .container .links ul a{
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
   position: relative;
+  /* z-index: -2; */
+}
+.contact::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.719);
+  z-index: 0;
+}
+.contact .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--sec-color);
+  z-index: 2;
+  position: relative;
+}
+.contact .container i{
+  position: absolute;
+  left: 14px;
+  TOP: 12px;
+  color: white;
+}
+.contact .container .enter{
+  position: relative;
+  display: flex;
 }
 .contact .container input{
-  z-index: 4;
+  width: 440px;
+  height: 40px;
+  padding-left: 40px;
+  position: relative;
+  border: 1px solid white;
+  background-color: transparent;
+  z-index: 2;
+}
+.contact .container input[type=text]{
+  color: white;
+  outline: none;
+}
+.contact .container input::placeholder{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  caret-shape: none;
+  opacity: 1;
+}
+.contact .container button{
+  
+
 }
 
 
