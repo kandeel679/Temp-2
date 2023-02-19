@@ -1031,9 +1031,12 @@ header .container .links ul a{
   transition: all 300ms ease 0s;
   font-size: 13px;
   margin-top: 40px;
+  transition: 500ms;
 }
-.pricing  footer p{
-  
+.pricing  footer button:hover{
+  color: var(--main-color);
+  background-color: white;
+  border: 1px solid black;
 }
 
 /* end of pricing */
@@ -1069,8 +1072,8 @@ header .container .links ul a{
 }
 .contact .container i{
   position: absolute;
-  left: 14px;
-  TOP: 12px;
+  left: 15px;
+  TOP: 17px;
   color: white;
 }
 .contact .container .enter{
@@ -1079,12 +1082,13 @@ header .container .links ul a{
 }
 .contact .container input{
   width: 440px;
-  height: 40px;
-  padding-left: 40px;
+  height: 50px;
+  padding-left: 50px;
   position: relative;
   border: 1px solid white;
   background-color: transparent;
   z-index: 2;
+  border-right: none;
 }
 .contact .container input[type=text]{
   color: white;
@@ -1097,12 +1101,93 @@ header .container .links ul a{
   text-transform: uppercase;
   caret-shape: none;
   opacity: 1;
+  
 }
 .contact .container button{
+  color: white;
+  font-size: 14px;
+  background-color: var(--main-color);
+  border: none;
+  height: 50px;
+  width: 123px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contact .container p{
+  color: white;
+  padding-left: 20px;
+
+
+}
+@media (max-width: 707px) {
+  .contact .container input{
+    width: 300px;
+  }
+}
+@media (max-width: 566px) {
+  .contact .container input{
+    width: 200px;
+  }
+}
+@media (max-width: 470px) {
+  .contact .container input{
+    width: 150px;
+  }
+}
+
+/* end of contact */
+/* start of contact-us */
+.contact-us{
+  padding-top:var(--main-padding) ;
+  padding-bottom: var(--main-padding);
+}
+.contact-us .container{
   
+}
+.contact-us .container .input{
+  display: flex;
+  flex-direction: column;
+}
+.contact-us .container .input input{
+  width: 531px;
+  margin-top: 30px;
+  height: 44px;
+
+}
+.contact-us .container .input input:nth-child(1){
+
+
+}
+.contact-us .container .input input:nth-child(2){
+
+
+}
+.contact-us .container .input input:nth-child(3){
+  height: 200px;
+  vertical-align: top;
+}
+.contact-us .container .input input:nth-child(3)[type=text] {
+  outline: none;
+  display:inline;
+  vertical-align: text-top;
+  margin-right: 1em;
+  margin-top: 0.5em;
+  resize: none;
+}
+
+
+.contact-us .container .info{
+
+}
+.contact-us .container input{
 
 }
 
 
-/* end of contact */
+/* end of contact-us */
+
 
