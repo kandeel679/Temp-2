@@ -1144,50 +1144,189 @@ header .container .links ul a{
 .contact-us{
   padding-top:var(--main-padding) ;
   padding-bottom: var(--main-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .contact-us .container{
-  
+  display: flex;
+  gap: 30px;
 }
 .contact-us .container .input{
   display: flex;
   flex-direction: column;
 }
-.contact-us .container .input input{
-  width: 531px;
-  margin-top: 30px;
-  height: 44px;
+.contact-us .container .input input
+  ,.contact-us .container .input textarea{
+    width: 531px;
+    margin-top: 30px;
+    height: 44px;
+    padding-left: 20px;
+  }
+  @media (max-width: 428px) {
+    .contact-us .container .input input
+  ,.contact-us .container .input textarea{
+    width: 200px;
+  }
+  }
+  .contact-us .container .input input:nth-child(1){
+    margin-top: 0;
+  }
+  
+  .contact-us .container .input textarea{
+    height: 180px;
+    padding-top: 10px;
+  }
+  
+  .contact-us .container .input input:focus
+  , .contact-us .container .input textarea:focus {
+    outline: none;
+    
+  }
+  
+  .contact-us .container .input input::placeholder
+    ,.contact-us .container .input textarea::placeholder{
+      font-size: 12px;
+      color: black;       
+      opacity: 1;
+      font-weight: 400;
+    }
 
-}
-.contact-us .container .input input:nth-child(1){
 
 
-}
-.contact-us .container .input input:nth-child(2){
-
-
-}
-.contact-us .container .input input:nth-child(3){
-  height: 200px;
-  vertical-align: top;
-}
-.contact-us .container .input input:nth-child(3)[type=text] {
-  outline: none;
-  display:inline;
-  vertical-align: text-top;
-  margin-right: 1em;
-  margin-top: 0.5em;
-  resize: none;
-}
 
 
 .contact-us .container .info{
-
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-.contact-us .container input{
+.contact-us .container .info .box{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact-us .container .info .box h2{
+  font-size: 11px;
+  font-weight: 400;
+}
+.contact-us .container .info .box p{
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.6;
+}
 
+.contact-us .buttoun{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contact-us input[type=submit]{
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  background-color: var(--main-color);
+  border: none;
+  height: 50px;
+  width: 123px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 200ms;
+}
+.contact-us input[type=submit]:hover{
+  background-color:#012b15;
 }
 
 
 /* end of contact-us */
+/* start of the footer  */
+.footer{
+  background-image: url(../images/pexels-cátia-matos-1072179.jpg);
+  background-size:cover ;
+  height: 300px;
+  position: relative;
+}
+.footer::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.719);
+  z-index: 0;
+}
+.footer .container{
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  height: 85%;
+  color: white;
+}
+.footer .container .box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.footer .container .logo i{
+  font-size: 50px;
+  padding-bottom: 30px;
+  
+}
+.footer .container .data h3{
+  border-bottom: 1px solid white ;
+  border-width: calc(100% + 90px);
+  padding-bottom: 12px;
+}
+.footer .container .data .icons{
+  padding-top: 12px;
+  cursor: pointer;
+  letter-spacing: 10px;
+}
+.footer p{
+  /* position: absolute;
+  bottom: -10%;
+  left: 37%;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  z-index: 4; */
+}
+/* @media (max-width: 769px) {
+  .footer p{
+    bottom: -10%;
+    left: 31%;
+  }
+}
+@media (max-width:992PX) {
+  .footer p{
+    bottom: -10%;
+    left: 35%;
+  }
+}
+@media (min-width:1200PX) {
+  .footer p{
+    bottom: -10%;
+    left: 37%;
+  }
+} */
+.footer p span{
+  color: var(--main-color);
+}
+.footer .div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* end of the footer  */
 
 
