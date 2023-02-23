@@ -928,7 +928,7 @@ header .container .links ul a{
 
 /* end of  after about */
 /* start of pricing */
-.pricing{
+.pricing{ 
   padding-top:var(--main-padding) ;
   padding-bottom: var(--main-padding);
 }
